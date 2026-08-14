@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shadow AI Sentinel — Risk Dashboard</title>
+<style>
+  :root {
+    --bg: #0b0f1a; --panel: #131a2b; --panel2: #0f1524; --border: #223051;
+    --text: #e7ecf7; --muted: #8a96b3; --accent: #38bdf8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .subtitle { color: var(--muted); font-size: 13px; margin-bottom: 28px; }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .card .num { font-size: 28px; font-weight: 700; }
+  .card .lbl { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .panel {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+    padding: 22px; margin-bottom: 24px;
+  }
+  .panel h2 { font-size: 14px; margin: 0 0 16px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+  .bar-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .bar-label { width: 64px; font-size: 13px; }
+  .bar-track { flex: 1; background: var(--panel2); border-radius: 6px; height: 14px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 6px; }
+  .bar-count { width: 24px; text-align: right; font-size: 13px; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase;
+        letter-spacing: .04em; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  td { padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .muted { color: var(--muted); font-size: 12px; }
+  .score { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .pill { padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+  .pill.ok { background: #22c55e22; color: #22c55e; border: 1px solid #22c55e55; }
+  .pill.warn { background: #dc262622; color: #f87171; border: 1px solid #dc262655; }
+  footer { color: var(--muted); font-size: 11px; margin-top: 20px; }
+</style>
+</head>
+<body>
+  <h1>🛰️ Shadow AI Sentinel — Discovery &amp; Risk Dashboard</h1>
+  <div class="subtitle">Generated 2026-08-14T05:42:02.311167+00:00 · lightweight fingerprint-based discovery over network logs and browser extension inventories</div>
+
+  <div class="cards">
+    <div class="card"><div class="num">22</div><div class="lbl">AI tools discovered</div></div>
+    <div class="card"><div class="num" style="color:#f87171">17</div><div class="lbl">Unsanctioned tools</div></div>
+    <div class="card"><div class="num">6</div><div class="lbl">Users involved</div></div>
+    <div class="card"><div class="num" style="color:#dc2626">16</div><div class="lbl">High + Critical findings</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Risk level distribution</h2>
+    <div class="bar-row"><span class="bar-label">Critical</span><div class="bar-track"><div class="bar-fill" style="width:36.4%;background:#dc2626"></div></div><span class="bar-count">8</span></div><div class="bar-row"><span class="bar-label">High</span><div class="bar-track"><div class="bar-fill" style="width:36.4%;background:#f97316"></div></div><span class="bar-count">8</span></div><div class="bar-row"><span class="bar-label">Medium</span><div class="bar-track"><div class="bar-fill" style="width:18.2%;background:#eab308"></div></div><span class="bar-count">4</span></div><div class="bar-row"><span class="bar-label">Low</span><div class="bar-track"><div class="bar-fill" style="width:9.1%;background:#22c55e"></div></div><span class="bar-count">2</span></div>
+  </div>
+
+  <div class="panel">
+    <h2>Discovered tools — ranked by risk</h2>
+    <table>
+      <thead><tr><th>Level</th><th>Score</th><th>Tool</th><th>Source</th><th>Category</th><th>Status</th><th>Users</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="pill" style="background:#dc262622;color:#dc2626;border:1px solid #dc262655">Critical</span></td>
+          <td class="score">85</td>
+          <td>ChatGPT for Google<div class="muted">Unofficial (third-party)</div></td>
+          <td>Extension</td>
+          <td>General Chatbot</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">arun.k@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#dc262622;color:#dc2626;border:1px solid #dc262655">Critical</span></td>
+          <td class="score">85</td>
+          <td>Monica: AI Copilot<div class="muted">Monica</div></td>
+          <td>Extension</td>
+          <td>Aggregator Multi Model</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">priya.s@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#dc262622;color:#dc2626;border:1px solid #dc262655">Critical</span></td>
+          <td class="score">85</td>
+          <td>Otter.ai Meeting Assistant<div class="muted">Otter</div></td>
+          <td>Extension</td>
+          <td>Meeting Transcription</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">rahul.m@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#dc262622;color:#dc2626;border:1px solid #dc262655">Critical</span></td>
+          <td class="score">85</td>
+          <td>Tabnine AI Autocomplete<div class="muted">Tabnine</div></td>
+          <td>Extension</td>
+          <td>Code Assistant</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">rahul.m@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#dc262622;color:#dc2626;border:1px solid #dc262655">Critical</span></td>
+          <td class="score">85</td>
+          <td>Sider: ChatGPT Sidebar<div class="muted">Sider</div></td>
+          <td>Extension</td>
+          <td>General Chatbot</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">divya.n@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#dc262622;color:#dc2626;border:1px solid #dc262655">Critical</span></td>
+          <td class="score">85</td>
+          <td>WebChatGPT: internet access for ChatGPT<div class="muted">Independent dev</div></td>
+          <td>Extension</td>
+          <td>General Chatbot</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">suresh.b@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#dc262622;color:#dc2626;border:1px solid #dc262655">Critical</span></td>
+          <td class="score">79.0</td>
+          <td>Otter.ai<div class="muted">Otter</div></td>
+          <td>Network</td>
+          <td>Meeting Transcription</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">rahul.m@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#dc262622;color:#dc2626;border:1px solid #dc262655">Critical</span></td>
+          <td class="score">75</td>
+          <td>Compose AI: AI Autocomplete<div class="muted">Compose AI</div></td>
+          <td>Extension</td>
+          <td>Writing Assistant</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">suresh.b@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#f9731622;color:#f97316;border:1px solid #f9731655">High</span></td>
+          <td class="score">74.0</td>
+          <td>OpenAI API (direct)<div class="muted">OpenAI</div></td>
+          <td>Network</td>
+          <td>Code Assistant</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">suresh.b@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#f9731622;color:#f97316;border:1px solid #f9731655">High</span></td>
+          <td class="score">67.0</td>
+          <td>ChatGPT (Web)<div class="muted">OpenAI</div></td>
+          <td>Network</td>
+          <td>General Chatbot</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">arun.k@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#f9731622;color:#f97316;border:1px solid #f9731655">High</span></td>
+          <td class="score">66.8</td>
+          <td>Fireflies.ai<div class="muted">Fireflies</div></td>
+          <td>Network</td>
+          <td>Meeting Transcription</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">arun.k@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#f9731622;color:#f97316;border:1px solid #f9731655">High</span></td>
+          <td class="score">66.0</td>
+          <td>Hugging Face Spaces<div class="muted">Hugging Face</div></td>
+          <td>Network</td>
+          <td>Code Assistant</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">rahul.m@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#f9731622;color:#f97316;border:1px solid #f9731655">High</span></td>
+          <td class="score">65</td>
+          <td>Grammarly: AI Writing Assistant<div class="muted">Grammarly Inc</div></td>
+          <td>Extension</td>
+          <td>Writing Assistant</td>
+          <td><span class="pill ok">Sanctioned</span></td>
+          <td class="muted">arun.k@corp.local, meena.r@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#f9731622;color:#f97316;border:1px solid #f9731655">High</span></td>
+          <td class="score">59.6</td>
+          <td>Tabnine<div class="muted">Tabnine</div></td>
+          <td>Network</td>
+          <td>Code Assistant</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">rahul.m@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#f9731622;color:#f97316;border:1px solid #f9731655">High</span></td>
+          <td class="score">54.3</td>
+          <td>Poe<div class="muted">Quora</div></td>
+          <td>Network</td>
+          <td>Aggregator Multi Model</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">divya.n@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#f9731622;color:#f97316;border:1px solid #f9731655">High</span></td>
+          <td class="score">50.5</td>
+          <td>Character.AI<div class="muted">Character Technologies</div></td>
+          <td>Network</td>
+          <td>General Chatbot</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">divya.n@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#eab30822;color:#eab308;border:1px solid #eab30855">Medium</span></td>
+          <td class="score">49.7</td>
+          <td>Perplexity AI<div class="muted">Perplexity</div></td>
+          <td>Network</td>
+          <td>General Chatbot</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">priya.s@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#eab30822;color:#eab308;border:1px solid #eab30855">Medium</span></td>
+          <td class="score">44.8</td>
+          <td>QuillBot<div class="muted">QuillBot</div></td>
+          <td>Network</td>
+          <td>Writing Assistant</td>
+          <td><span class="pill warn">Unsanctioned</span></td>
+          <td class="muted">suresh.b@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#eab30822;color:#eab308;border:1px solid #eab30855">Medium</span></td>
+          <td class="score">34.4</td>
+          <td>GitHub Copilot<div class="muted">Microsoft/GitHub</div></td>
+          <td>Network</td>
+          <td>Code Assistant</td>
+          <td><span class="pill ok">Sanctioned</span></td>
+          <td class="muted">arun.k@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#eab30822;color:#eab308;border:1px solid #eab30855">Medium</span></td>
+          <td class="score">25.2</td>
+          <td>Claude<div class="muted">Anthropic</div></td>
+          <td>Network</td>
+          <td>General Chatbot</td>
+          <td><span class="pill ok">Sanctioned</span></td>
+          <td class="muted">priya.s@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#22c55e22;color:#22c55e;border:1px solid #22c55e55">Low</span></td>
+          <td class="score">20.0</td>
+          <td>Grammarly<div class="muted">Grammarly</div></td>
+          <td>Network</td>
+          <td>Writing Assistant</td>
+          <td><span class="pill ok">Sanctioned</span></td>
+          <td class="muted">meena.r@corp.local</td>
+        </tr>
+        <tr>
+          <td><span class="pill" style="background:#22c55e22;color:#22c55e;border:1px solid #22c55e55">Low</span></td>
+          <td class="score">19.3</td>
+          <td>DeepL<div class="muted">DeepL</div></td>
+          <td>Network</td>
+          <td>Writing Assistant</td>
+          <td><span class="pill ok">Sanctioned</span></td>
+          <td class="muted">meena.r@corp.local</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>Shadow AI Sentinel prototype · fingerprint DB v1 · scores are heuristic (0-100), not a certified security assessment.</footer>
+</body>
+</html>

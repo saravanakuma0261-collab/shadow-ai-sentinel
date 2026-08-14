@@ -1,0 +1,16 @@
+timestamp,user,device,domain,bytes_uploaded,bytes_downloaded
+2026-08-10T09:12:03,arun.k@corp.local,LAP-0231,chat.openai.com,482112,201344
+2026-08-10T09:15:41,arun.k@corp.local,LAP-0231,chat.openai.com,918233,340211
+2026-08-10T10:02:17,priya.s@corp.local,LAP-0114,claude.ai,120044,88213
+2026-08-10T10:30:55,rahul.m@corp.local,LAP-0098,app.tabnine.com,55021,20033
+2026-08-10T11:05:12,rahul.m@corp.local,LAP-0098,otter.ai,2201044,940213
+2026-08-10T11:20:44,divya.n@corp.local,LAP-0177,poe.com,331200,142011
+2026-08-10T12:01:09,suresh.b@corp.local,LAP-0203,quillbot.com,84032,41022
+2026-08-10T12:45:33,meena.r@corp.local,LAP-0055,grammarly.com,102944,55210
+2026-08-10T13:10:02,arun.k@corp.local,LAP-0231,github.com/copilot,44021,19022
+2026-08-10T13:22:19,priya.s@corp.local,LAP-0114,perplexity.ai,66211,38022
+2026-08-10T14:01:41,divya.n@corp.local,LAP-0177,character.ai,152033,71200
+2026-08-10T14:33:08,rahul.m@corp.local,LAP-0098,huggingface.co,701203,301022
+2026-08-10T15:02:55,suresh.b@corp.local,LAP-0203,api.openai.com,1502211,60211
+2026-08-10T15:40:12,meena.r@corp.local,LAP-0055,deepl.com,32011,18022
+2026-08-10T16:12:47,arun.k@corp.local,LAP-0231,fireflies.ai,980233,410122

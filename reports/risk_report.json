@@ -1,0 +1,389 @@
+{
+  "generated_at": "2026-08-14T05:42:02.311167+00:00",
+  "summary": {
+    "total_tools_discovered": 22,
+    "unsanctioned_tools_discovered": 17,
+    "distinct_users_involved": 6,
+    "risk_level_breakdown": {
+      "Critical": 8,
+      "High": 8,
+      "Medium": 4,
+      "Low": 2
+    }
+  },
+  "findings": [
+    {
+      "source": "browser_extension",
+      "service": "ChatGPT for Google",
+      "vendor": "Unofficial (third-party)",
+      "extension_id": "gpaiobkfhnonedkhhfjpmhdalgeoebfa",
+      "category": "general_chatbot",
+      "sanctioned": false,
+      "permissions": [
+        "read_write_all_sites",
+        "browsing_history"
+      ],
+      "affected_users": [
+        "arun.k@corp.local"
+      ],
+      "affected_devices": [
+        "LAP-0231"
+      ],
+      "risk_score": 85,
+      "risk_level": "Critical"
+    },
+    {
+      "source": "browser_extension",
+      "service": "Monica: AI Copilot",
+      "vendor": "Monica",
+      "extension_id": "ogbhbgkiojdollpjbhbamafmedkeockb",
+      "category": "aggregator_multi_model",
+      "sanctioned": false,
+      "permissions": [
+        "read_write_all_sites",
+        "browsing_history",
+        "clipboard_access"
+      ],
+      "affected_users": [
+        "priya.s@corp.local"
+      ],
+      "affected_devices": [
+        "LAP-0114"
+      ],
+      "risk_score": 85,
+      "risk_level": "Critical"
+    },
+    {
+      "source": "browser_extension",
+      "service": "Otter.ai Meeting Assistant",
+      "vendor": "Otter",
+      "extension_id": "dknlfmjaanfblgfdfebhijalfmhmjjjo",
+      "category": "meeting_transcription",
+      "sanctioned": false,
+      "permissions": [
+        "webcam_mic",
+        "read_write_all_sites"
+      ],
+      "affected_users": [
+        "rahul.m@corp.local"
+      ],
+      "affected_devices": [
+        "LAP-0098"
+      ],
+      "risk_score": 85,
+      "risk_level": "Critical"
+    },
+    {
+      "source": "browser_extension",
+      "service": "Tabnine AI Autocomplete",
+      "vendor": "Tabnine",
+      "extension_id": "cofdbpoegempjloogbagkncekinflcnj",
+      "category": "code_assistant",
+      "sanctioned": false,
+      "permissions": [
+        "read_write_all_sites",
+        "clipboard_access"
+      ],
+      "affected_users": [
+        "rahul.m@corp.local"
+      ],
+      "affected_devices": [
+        "LAP-0098"
+      ],
+      "risk_score": 85,
+      "risk_level": "Critical"
+    },
+    {
+      "source": "browser_extension",
+      "service": "Sider: ChatGPT Sidebar",
+      "vendor": "Sider",
+      "extension_id": "kkbmldbdgmbbncmcijhcaaaodmkohjeh",
+      "category": "general_chatbot",
+      "sanctioned": false,
+      "permissions": [
+        "read_write_all_sites",
+        "clipboard_access",
+        "downloads"
+      ],
+      "affected_users": [
+        "divya.n@corp.local"
+      ],
+      "affected_devices": [
+        "LAP-0177"
+      ],
+      "risk_score": 85,
+      "risk_level": "Critical"
+    },
+    {
+      "source": "browser_extension",
+      "service": "WebChatGPT: internet access for ChatGPT",
+      "vendor": "Independent dev",
+      "extension_id": "dpjcnhkjpolpiaikoemhoolmiibgcbpm",
+      "category": "general_chatbot",
+      "sanctioned": false,
+      "permissions": [
+        "read_write_all_sites",
+        "browsing_history"
+      ],
+      "affected_users": [
+        "suresh.b@corp.local"
+      ],
+      "affected_devices": [
+        "LAP-0203"
+      ],
+      "risk_score": 85,
+      "risk_level": "Critical"
+    },
+    {
+      "source": "network_log",
+      "service": "Otter.ai",
+      "vendor": "Otter",
+      "domain": "otter.ai",
+      "category": "meeting_transcription",
+      "sanctioned": false,
+      "affected_users": [
+        "rahul.m@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 2201044,
+      "risk_score": 79.0,
+      "risk_level": "Critical"
+    },
+    {
+      "source": "browser_extension",
+      "service": "Compose AI: AI Autocomplete",
+      "vendor": "Compose AI",
+      "extension_id": "hkojdgigmbkdiddoolhepbbjblknnhpn",
+      "category": "writing_assistant",
+      "sanctioned": false,
+      "permissions": [
+        "read_write_all_sites"
+      ],
+      "affected_users": [
+        "suresh.b@corp.local"
+      ],
+      "affected_devices": [
+        "LAP-0203"
+      ],
+      "risk_score": 75,
+      "risk_level": "Critical"
+    },
+    {
+      "source": "network_log",
+      "service": "OpenAI API (direct)",
+      "vendor": "OpenAI",
+      "domain": "api.openai.com",
+      "category": "code_assistant",
+      "sanctioned": false,
+      "affected_users": [
+        "suresh.b@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 1502211,
+      "risk_score": 74.0,
+      "risk_level": "High"
+    },
+    {
+      "source": "network_log",
+      "service": "ChatGPT (Web)",
+      "vendor": "OpenAI",
+      "domain": "chat.openai.com",
+      "category": "general_chatbot",
+      "sanctioned": false,
+      "affected_users": [
+        "arun.k@corp.local"
+      ],
+      "event_count": 2,
+      "total_bytes_uploaded": 1400345,
+      "risk_score": 67.0,
+      "risk_level": "High"
+    },
+    {
+      "source": "network_log",
+      "service": "Fireflies.ai",
+      "vendor": "Fireflies",
+      "domain": "fireflies.ai",
+      "category": "meeting_transcription",
+      "sanctioned": false,
+      "affected_users": [
+        "arun.k@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 980233,
+      "risk_score": 66.8,
+      "risk_level": "High"
+    },
+    {
+      "source": "network_log",
+      "service": "Hugging Face Spaces",
+      "vendor": "Hugging Face",
+      "domain": "huggingface.co",
+      "category": "code_assistant",
+      "sanctioned": false,
+      "affected_users": [
+        "rahul.m@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 701203,
+      "risk_score": 66.0,
+      "risk_level": "High"
+    },
+    {
+      "source": "browser_extension",
+      "service": "Grammarly: AI Writing Assistant",
+      "vendor": "Grammarly Inc",
+      "extension_id": "kbfnbcaeplbcioakkpcpgfkobkghlhen",
+      "category": "writing_assistant",
+      "sanctioned": true,
+      "permissions": [
+        "read_write_all_sites",
+        "clipboard_access"
+      ],
+      "affected_users": [
+        "arun.k@corp.local",
+        "meena.r@corp.local"
+      ],
+      "affected_devices": [
+        "LAP-0055",
+        "LAP-0231"
+      ],
+      "risk_score": 65,
+      "risk_level": "High"
+    },
+    {
+      "source": "network_log",
+      "service": "Tabnine",
+      "vendor": "Tabnine",
+      "domain": "app.tabnine.com",
+      "category": "code_assistant",
+      "sanctioned": false,
+      "affected_users": [
+        "rahul.m@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 55021,
+      "risk_score": 59.6,
+      "risk_level": "High"
+    },
+    {
+      "source": "network_log",
+      "service": "Poe",
+      "vendor": "Quora",
+      "domain": "poe.com",
+      "category": "aggregator_multi_model",
+      "sanctioned": false,
+      "affected_users": [
+        "divya.n@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 331200,
+      "risk_score": 54.3,
+      "risk_level": "High"
+    },
+    {
+      "source": "network_log",
+      "service": "Character.AI",
+      "vendor": "Character Technologies",
+      "domain": "character.ai",
+      "category": "general_chatbot",
+      "sanctioned": false,
+      "affected_users": [
+        "divya.n@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 152033,
+      "risk_score": 50.5,
+      "risk_level": "High"
+    },
+    {
+      "source": "network_log",
+      "service": "Perplexity AI",
+      "vendor": "Perplexity",
+      "domain": "perplexity.ai",
+      "category": "general_chatbot",
+      "sanctioned": false,
+      "affected_users": [
+        "priya.s@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 66211,
+      "risk_score": 49.7,
+      "risk_level": "Medium"
+    },
+    {
+      "source": "network_log",
+      "service": "QuillBot",
+      "vendor": "QuillBot",
+      "domain": "quillbot.com",
+      "category": "writing_assistant",
+      "sanctioned": false,
+      "affected_users": [
+        "suresh.b@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 84032,
+      "risk_score": 44.8,
+      "risk_level": "Medium"
+    },
+    {
+      "source": "network_log",
+      "service": "GitHub Copilot",
+      "vendor": "Microsoft/GitHub",
+      "domain": "github.com/copilot",
+      "category": "code_assistant",
+      "sanctioned": true,
+      "affected_users": [
+        "arun.k@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 44021,
+      "risk_score": 34.4,
+      "risk_level": "Medium"
+    },
+    {
+      "source": "network_log",
+      "service": "Claude",
+      "vendor": "Anthropic",
+      "domain": "claude.ai",
+      "category": "general_chatbot",
+      "sanctioned": true,
+      "affected_users": [
+        "priya.s@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 120044,
+      "risk_score": 25.2,
+      "risk_level": "Medium"
+    },
+    {
+      "source": "network_log",
+      "service": "Grammarly",
+      "vendor": "Grammarly",
+      "domain": "grammarly.com",
+      "category": "writing_assistant",
+      "sanctioned": true,
+      "affected_users": [
+        "meena.r@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 102944,
+      "risk_score": 20.0,
+      "risk_level": "Low"
+    },
+    {
+      "source": "network_log",
+      "service": "DeepL",
+      "vendor": "DeepL",
+      "domain": "deepl.com",
+      "category": "writing_assistant",
+      "sanctioned": true,
+      "affected_users": [
+        "meena.r@corp.local"
+      ],
+      "event_count": 1,
+      "total_bytes_uploaded": 32011,
+      "risk_score": 19.3,
+      "risk_level": "Low"
+    }
+  ]
+}

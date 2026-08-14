@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "description": "Curated fingerprint DB of known AI service domains for Shadow AI discovery.",
+    "category_sensitivity_weight": {
+      "code_assistant": 30,
+      "general_chatbot": 20,
+      "meeting_transcription": 28,
+      "writing_assistant": 15,
+      "image_generation": 8,
+      "data_analytics": 25,
+      "design_assistant": 10,
+      "aggregator_multi_model": 22,
+      "voice_ai": 18
+    },
+    "notes": "category_sensitivity_weight approximates how likely typical usage of that category involves confidential/proprietary data leaving the org."
+  },
+  "domains": [
+    {"domain": "chat.openai.com", "service": "ChatGPT (Web)", "vendor": "OpenAI", "category": "general_chatbot", "sanctioned": false},
+    {"domain": "chatgpt.com", "service": "ChatGPT (Web)", "vendor": "OpenAI", "category": "general_chatbot", "sanctioned": false},
+    {"domain": "claude.ai", "service": "Claude", "vendor": "Anthropic", "category": "general_chatbot", "sanctioned": true},
+    {"domain": "gemini.google.com", "service": "Gemini", "vendor": "Google", "category": "general_chatbot", "sanctioned": false},
+    {"domain": "poe.com", "service": "Poe", "vendor": "Quora", "category": "aggregator_multi_model", "sanctioned": false},
+    {"domain": "perplexity.ai", "service": "Perplexity AI", "vendor": "Perplexity", "category": "general_chatbot", "sanctioned": false},
+    {"domain": "character.ai", "service": "Character.AI", "vendor": "Character Technologies", "category": "general_chatbot", "sanctioned": false},
+    {"domain": "copilot.microsoft.com", "service": "Microsoft Copilot", "vendor": "Microsoft", "category": "general_chatbot", "sanctioned": true},
+    {"domain": "github.com/copilot", "service": "GitHub Copilot", "vendor": "Microsoft/GitHub", "category": "code_assistant", "sanctioned": true},
+    {"domain": "app.tabnine.com", "service": "Tabnine", "vendor": "Tabnine", "category": "code_assistant", "sanctioned": false},
+    {"domain": "codeium.com", "service": "Codeium", "vendor": "Codeium", "category": "code_assistant", "sanctioned": false},
+    {"domain": "replit.com", "service": "Replit Ghostwriter", "vendor": "Replit", "category": "code_assistant", "sanctioned": false},
+    {"domain": "huggingface.co", "service": "Hugging Face Spaces", "vendor": "Hugging Face", "category": "code_assistant", "sanctioned": false},
+    {"domain": "otter.ai", "service": "Otter.ai", "vendor": "Otter", "category": "meeting_transcription", "sanctioned": false},
+    {"domain": "fireflies.ai", "service": "Fireflies.ai", "vendor": "Fireflies", "category": "meeting_transcription", "sanctioned": false},
+    {"domain": "fathom.video", "service": "Fathom", "vendor": "Fathom", "category": "meeting_transcription", "sanctioned": false},
+    {"domain": "grammarly.com", "service": "Grammarly", "vendor": "Grammarly", "category": "writing_assistant", "sanctioned": true},
+    {"domain": "quillbot.com", "service": "QuillBot", "vendor": "QuillBot", "category": "writing_assistant", "sanctioned": false},
+    {"domain": "jasper.ai", "service": "Jasper", "vendor": "Jasper", "category": "writing_assistant", "sanctioned": false},
+    {"domain": "writesonic.com", "service": "Writesonic", "vendor": "Writesonic", "category": "writing_assistant", "sanctioned": false},
+    {"domain": "notion.so", "service": "Notion AI", "vendor": "Notion", "category": "writing_assistant", "sanctioned": true},
+    {"domain": "midjourney.com", "service": "Midjourney", "vendor": "Midjourney", "category": "image_generation", "sanctioned": false},
+    {"domain": "leonardo.ai", "service": "Leonardo AI", "vendor": "Leonardo", "category": "image_generation", "sanctioned": false},
+    {"domain": "canva.com", "service": "Canva Magic Studio", "vendor": "Canva", "category": "design_assistant", "sanctioned": true},
+    {"domain": "deepl.com", "service": "DeepL", "vendor": "DeepL", "category": "writing_assistant", "sanctioned": true},
+    {"domain": "elevenlabs.io", "service": "ElevenLabs", "vendor": "ElevenLabs", "category": "voice_ai", "sanctioned": false},
+    {"domain": "beta.character.ai", "service": "Character.AI Beta", "vendor": "Character Technologies", "category": "general_chatbot", "sanctioned": false},
+    {"domain": "api.openai.com", "service": "OpenAI API (direct)", "vendor": "OpenAI", "category": "code_assistant", "sanctioned": false},
+    {"domain": "api.anthropic.com", "service": "Anthropic API (direct)", "vendor": "Anthropic", "category": "code_assistant", "sanctioned": true},
+    {"domain": "chatpdf.com", "service": "ChatPDF", "vendor": "ChatPDF", "category": "data_analytics", "sanctioned": false},
+    {"domain": "krisp.ai", "service": "Krisp", "vendor": "Krisp", "category": "voice_ai", "sanctioned": false}
+  ]
+}

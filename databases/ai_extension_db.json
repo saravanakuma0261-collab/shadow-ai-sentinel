@@ -1,0 +1,95 @@
+{
+  "_meta": {
+    "description": "Curated fingerprint DB of known AI browser extensions for Shadow AI discovery.",
+    "permission_risk_weight": {
+      "read_write_all_sites": 30,
+      "clipboard_access": 15,
+      "active_tab_only": 5,
+      "webcam_mic": 25,
+      "browsing_history": 20,
+      "downloads": 10
+    }
+  },
+  "extensions": [
+    {
+      "extension_id": "gpaiobkfhnonedkhhfjpmhdalgeoebfa",
+      "name": "ChatGPT for Google",
+      "publisher": "Unofficial (third-party)",
+      "category": "general_chatbot",
+      "permissions": ["read_write_all_sites", "browsing_history"],
+      "sanctioned": false
+    },
+    {
+      "extension_id": "bfhbnjhgmancaeghjmjmajjfghaejnpe",
+      "name": "Merlin: AI Chat Assistant",
+      "publisher": "Foyer Inc",
+      "category": "general_chatbot",
+      "permissions": ["read_write_all_sites", "clipboard_access"],
+      "sanctioned": false
+    },
+    {
+      "extension_id": "kkbmldbdgmbbncmcijhcaaaodmkohjeh",
+      "name": "Sider: ChatGPT Sidebar",
+      "publisher": "Sider",
+      "category": "general_chatbot",
+      "permissions": ["read_write_all_sites", "clipboard_access", "downloads"],
+      "sanctioned": false
+    },
+    {
+      "extension_id": "ogbhbgkiojdollpjbhbamafmedkeockb",
+      "name": "Monica: AI Copilot",
+      "publisher": "Monica",
+      "category": "aggregator_multi_model",
+      "permissions": ["read_write_all_sites", "browsing_history", "clipboard_access"],
+      "sanctioned": false
+    },
+    {
+      "extension_id": "kbfnbcaeplbcioakkpcpgfkobkghlhen",
+      "name": "Grammarly: AI Writing Assistant",
+      "publisher": "Grammarly Inc",
+      "category": "writing_assistant",
+      "permissions": ["read_write_all_sites", "clipboard_access"],
+      "sanctioned": true
+    },
+    {
+      "extension_id": "dpjcnhkjpolpiaikoemhoolmiibgcbpm",
+      "name": "WebChatGPT: internet access for ChatGPT",
+      "publisher": "Independent dev",
+      "category": "general_chatbot",
+      "permissions": ["read_write_all_sites", "browsing_history"],
+      "sanctioned": false
+    },
+    {
+      "extension_id": "hkojdgigmbkdiddoolhepbbjblknnhpn",
+      "name": "Compose AI: AI Autocomplete",
+      "publisher": "Compose AI",
+      "category": "writing_assistant",
+      "permissions": ["read_write_all_sites"],
+      "sanctioned": false
+    },
+    {
+      "extension_id": "dknlfmjaanfblgfdfebhijalfmhmjjjo",
+      "name": "Otter.ai Meeting Assistant",
+      "publisher": "Otter",
+      "category": "meeting_transcription",
+      "permissions": ["webcam_mic", "read_write_all_sites"],
+      "sanctioned": false
+    },
+    {
+      "extension_id": "cofdbpoegempjloogbagkncekinflcnj",
+      "name": "Tabnine AI Autocomplete",
+      "publisher": "Tabnine",
+      "category": "code_assistant",
+      "permissions": ["read_write_all_sites", "clipboard_access"],
+      "sanctioned": false
+    },
+    {
+      "extension_id": "gighmmpiobklfepjocnamgkkbiglidom",
+      "name": "AdBlock (control, non-AI)",
+      "publisher": "AdBlock Inc",
+      "category": "non_ai_utility",
+      "permissions": ["active_tab_only"],
+      "sanctioned": true
+    }
+  ]
+}

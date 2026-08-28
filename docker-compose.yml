@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # FastAPI Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: shadow-ai-backend
+    restart: always
+    environment:
+      # Supabase Config
+      SUPABASE_URL: ${SUPABASE_URL:-""}
+      SUPABASE_SERVICE_KEY: ${SUPABASE_SERVICE_KEY:-""}
+      # Other App Config
+      JWT_SECRET: dev_jwt_secret_traceforce_2026_super_secure_key
+      ADMIN_EMAIL: admin@enterprise.com
+      ADMIN_PASSWORD: AdminSecure2026!
+      CORS_ORIGINS: "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173"
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-""}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-""}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-""}
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "python seed_db.py && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+
+  # React Frontend Dashboard
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: shadow-ai-frontend
+    restart: always
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend

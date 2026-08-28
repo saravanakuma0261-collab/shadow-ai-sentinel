@@ -1,0 +1,21 @@
+timestamp,client_ip,user_email,domain,path,method,status_code,bytes_sent,bytes_received,user_agent
+2026-08-24T08:15:12Z,10.0.4.12,alex.dev@corp.local,api.openai.com,/v1/chat/completions,POST,200,854200,1240000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T08:16:30Z,10.0.4.12,alex.dev@corp.local,chatgpt.com,/backend-api/conversation,POST,200,450000,890000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T08:18:45Z,10.0.4.15,priya.sec@corp.local,claude.ai,/api/organizations/chat,POST,200,620000,980000,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+2026-08-24T08:20:10Z,10.0.4.22,rohit.pm@corp.local,otter.ai,/api/v1/speeches/upload,POST,200,14500000,120000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T08:22:15Z,10.0.4.18,david.eng@corp.local,deepseek.com,/api/v1/generate,POST,200,1200000,2400000,Mozilla/5.0 (X11; Linux x86_64)
+2026-08-24T08:25:00Z,10.0.4.30,sarah.mkt@corp.local,jasper.ai,/api/generate-content,POST,200,340000,620000,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+2026-08-24T08:28:40Z,10.0.4.12,alex.dev@corp.local,cursor.com,/api/copilot/complete,POST,200,9800000,14500000,Cursor/0.38.0
+2026-08-24T08:30:12Z,10.0.4.45,elena.ds@corp.local,huggingface.co,/models/inference,POST,200,45000000,89000000,python-requests/2.31.0
+2026-08-24T08:35:22Z,10.0.4.50,mark.sales@corp.local,fireflies.ai,/api/transcriptions,POST,200,8900000,450000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T08:40:19Z,10.0.4.19,kavita.qa@corp.local,unknown-genai-autocoder.ai,/v1/codegen,POST,200,3400000,4200000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T08:45:00Z,10.0.4.10,admin@corp.local,google.com,/search,GET,200,1200,85000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T08:47:11Z,10.0.4.14,dev.user@corp.local,github.com,/Traceforce/repo/pulls,GET,200,4500,240000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T08:50:33Z,10.0.4.16,sales.rep@corp.local,salesforce.com,/lightning/r/Lead,GET,200,8900,450000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T08:55:04Z,10.0.4.22,rohit.pm@corp.local,slack.com,/api/conversations.history,POST,200,12000,34000,SlackApp/4.38.0
+2026-08-24T09:00:20Z,10.0.4.25,ananya.hr@corp.local,perplexity.ai,/api/search,POST,200,180000,420000,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)
+2026-08-24T09:05:44Z,10.0.4.60,vikram.eng@corp.local,v0.dev,/api/generate-ui,POST,200,560000,1200000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T09:10:15Z,10.0.4.18,david.eng@corp.local,elevenlabs.io,/v1/text-to-speech,POST,200,2300000,8900000,Mozilla/5.0 (X11; Linux x86_64)
+2026-08-24T09:15:30Z,10.0.4.35,neha.ops@corp.local,quillbot.com,/api/paraphrase,POST,200,140000,280000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T09:20:00Z,10.0.4.40,tarun.fin@corp.local,gemini.google.com,/app/chat,POST,200,320000,580000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+2026-08-24T09:25:12Z,10.0.4.12,alex.dev@corp.local,copilot.microsoft.com,/chat,POST,200,410000,720000,Mozilla/5.0 (Windows NT 10.0; Win64; x64)

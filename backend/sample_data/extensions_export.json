@@ -1,0 +1,78 @@
+{
+  "export_date": "2026-08-24T08:00:00Z",
+  "organization": "Traceforce Enterprise Workstations",
+  "extensions": [
+    {
+      "user_email": "alex.dev@corp.local",
+      "extension_id": "cbgkgoloidfondphgahpkofghjejgjfn",
+      "name": "Harpa AI Automation Agent",
+      "version": "8.12.0",
+      "permissions": ["<all_urls>", "webRequest", "storage", "tabs", "activeTab", "scripting"],
+      "install_type": "user_installed"
+    },
+    {
+      "user_email": "rohit.pm@corp.local",
+      "extension_id": "epnmijgnckbghkaggfkfopppmidlhghf",
+      "name": "Tactiq: ChatGPT Meeting Notes",
+      "version": "4.1.2",
+      "permissions": ["tabCapture", "storage", "activeTab", "https://*.zoom.us/*", "https://*.google.com/*"],
+      "install_type": "user_installed"
+    },
+    {
+      "user_email": "sarah.mkt@corp.local",
+      "extension_id": "fheoggkfdfchfphceeifdbepaooicaho",
+      "name": "Grammarly for Chrome",
+      "version": "14.1085.0",
+      "permissions": ["activeTab", "storage", "contextMenus"],
+      "install_type": "admin_policy"
+    },
+    {
+      "user_email": "priya.sec@corp.local",
+      "extension_id": "fdlohnjflmgmcnkaeeibomclcjjkbbio",
+      "name": "ChatGPT for Google",
+      "version": "2.4.0",
+      "permissions": ["<all_urls>", "storage", "tabs"],
+      "install_type": "user_installed"
+    },
+    {
+      "user_email": "david.eng@corp.local",
+      "extension_id": "mhnmfljfncnllocpgbkchcpmogclhlfe",
+      "name": "Monica - Your AI Copilot",
+      "version": "6.0.4",
+      "permissions": ["<all_urls>", "webRequest", "storage", "cookies", "clipboardRead"],
+      "install_type": "user_installed"
+    },
+    {
+      "user_email": "ananya.hr@corp.local",
+      "extension_id": "gppongmhjkpfnbhagpmjfkannfbllamg",
+      "name": "Scribe: AI Documentation",
+      "version": "3.5.1",
+      "permissions": ["activeTab", "storage", "tabs"],
+      "install_type": "user_installed"
+    },
+    {
+      "user_email": "neha.ops@corp.local",
+      "extension_id": "aapbdbdomjkkjkaonfhkkikfgjllcleb",
+      "name": "Google Translate",
+      "version": "2.0.13",
+      "permissions": ["contextMenus", "storage"],
+      "install_type": "admin_policy"
+    },
+    {
+      "user_email": "kavita.qa@corp.local",
+      "extension_id": "cjpalhdlnbpafiamejdnhcphjbkeiagm",
+      "name": "uBlock Origin",
+      "version": "1.58.0",
+      "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+      "install_type": "user_installed"
+    },
+    {
+      "user_email": "vikram.eng@corp.local",
+      "extension_id": "unvetted-autogen-prompt-copilot",
+      "name": "AI Prompt Generator & Script Copilot",
+      "version": "1.0.0",
+      "permissions": ["<all_urls>", "webRequest", "nativeMessaging", "storage"],
+      "install_type": "user_installed"
+    }
+  ]
+}

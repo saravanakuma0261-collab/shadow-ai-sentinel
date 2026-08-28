@@ -1,0 +1,18 @@
+[
+  { "name": "ChatGPT for Google", "category": "Search & Web Companion", "vendor": "ChatGPT for Google Community", "sanctioned": false },
+  { "name": "Harpa AI Automation Agent", "category": "Web Automation & Scraping AI", "vendor": "HARPA AI", "sanctioned": false },
+  { "name": "Grammarly for Chrome", "category": "Writing & Grammar Assistant", "vendor": "Grammarly Inc.", "sanctioned": true },
+  { "name": "Otter.ai: Transcribe & Capture Meetings", "category": "Meeting Assistant & Audio Capture", "vendor": "Otter.ai", "sanctioned": false },
+  { "name": "Perplexity - AI Companion", "category": "Search & Research AI", "vendor": "Perplexity AI", "sanctioned": false },
+  { "name": "Monica - Your AI Copilot", "category": "All-in-One AI Assistant", "vendor": "Monica.im", "sanctioned": false },
+  { "name": "Scribe: AI Documentation", "category": "Workflow & SOP Generator", "vendor": "Scribe Inc.", "sanctioned": false },
+  { "name": "Compose AI: AI Writing Assistant", "category": "Email & Document Autocomplete", "vendor": "Compose AI", "sanctioned": false },
+  { "name": "Merlin AI: ChatGPT Plus on all websites", "category": "Browser AI Assistant", "vendor": "GetMerlin", "sanctioned": false },
+  { "name": "Tactiq: ChatGPT Meeting Notes", "category": "Meeting Notes & Transcription", "vendor": "Tactiq.io", "sanctioned": false },
+  { "name": "AIPRM for ChatGPT", "category": "Prompt Management Extension", "vendor": "AIPRM Corp", "sanctioned": false },
+  { "name": "GitHub Copilot for Web", "category": "Code Assistant", "vendor": "GitHub / Microsoft", "sanctioned": true },
+  { "name": "QuillBot: AI Writing and Grammar Checker", "category": "Paraphrasing & Writing", "vendor": "Learneo", "sanctioned": false },
+  { "name": "Fireflies.ai Chrome Extension", "category": "Meeting Transcriber", "vendor": "Fireflies.ai", "sanctioned": false },
+  { "name": "Liner: ChatGPT Google Search & Highlight", "category": "Search Copilot", "vendor": "Liner", "sanctioned": false },
+  { "name": "MaxAI.me: Use 1-Click AI Anywhere", "category": "Multi-Model Browser Copilot", "vendor": "MaxAI", "sanctioned": false }
+]

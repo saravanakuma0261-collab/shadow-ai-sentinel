@@ -111,7 +111,7 @@ def list_all_scans(
 def trigger_scan(
     payload: ScanTriggerRequest,
     background_tasks: BackgroundTasks,
-    current_user: User = Depends(require_role("admin", "analyst", "viewer"))
+    current_user: User = Depends(require_role("admin", "analyst"))
 ):
     """
     Triggers an asynchronous scan for shadow AI usage.

@@ -34,7 +34,7 @@ DNS_LOG_PATH = os.path.join(DATA_DIR, "network_dns_log.csv")
 
 
 def load_json(path):
-    with open(path, "r") as f:
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -57,7 +57,7 @@ def analyze_network_log(domain_db):
 
     hits = defaultdict(lambda: {"events": [], "users": set(), "bytes_up": 0})
 
-    with open(DNS_LOG_PATH, newline="") as f:
+    with open(DNS_LOG_PATH, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             domain = row["domain"]
@@ -171,7 +171,7 @@ def build_report():
 
     os.makedirs(REPORT_DIR, exist_ok=True)
     out_path = os.path.join(REPORT_DIR, "risk_report.json")
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2)
 
     return report, out_path

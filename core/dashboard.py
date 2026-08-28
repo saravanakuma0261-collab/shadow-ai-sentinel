@@ -120,13 +120,13 @@ def render(report):
   <footer>Shadow AI Sentinel prototype · fingerprint DB v1 · scores are heuristic (0-100), not a certified security assessment.</footer>
 </body>
 </html>"""
-    with open(OUT_HTML, "w") as f:
+    with open(OUT_HTML, "w", encoding="utf-8") as f:
         f.write(html)
     return OUT_HTML
 
 
 if __name__ == "__main__":
-    with open(REPORT_JSON) as f:
+    with open(REPORT_JSON, "r", encoding="utf-8") as f:
         report = json.load(f)
     path = render(report)
     print(f"Dashboard written to: {path}")
